@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/commun.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Programming Hub Contact</title>
+  </head>
+  <body>
+    <header>
+      <h1>JK Programming Hub</h1>
+      <nav>
+        <ul>
+          <li><a href="/index.html" class="linksHead">Home</a></li>
+          <li><a href="about.html" class="linksHead">About Me</a></li>
+          <li><a href="galerie.html" class="linksHead">Galerie</a></li>
+          <li><a href="contact.html" class="linksHead">Contact</a></li>
+          <li>
+            <a href="cours.html" class="linksHead">Cours</a>
+          </li>
+        </ul>
+      </nav>
+      <i class="fa-solid fa-bars menu-icon"></i>
+    </header>
+    <video
+      src="/videos/formations/git et gitHub/galaxy.mp4"
+      autoplay
+      muted
+      loop
+      class="video-background"
+    ></video>
+
+    <section id="main">
+      <div class="infoUs">
+        <h1>Contact Informations</h1>
+        <!-- Email -->
+        <h2 class="detailsInfoTitle">Email</h2>
+        <h3 class="information"><i class="fa-solid fa-envelope"></i>contact@jkprogramminghub.com</h3>
+        <!-- Phone Number -->
+        <h2 class="detailsInfoTitle">Numero de telephone</h2>
+        <h3 class="information"><i class="fa-solid fa-phone-volume"></i>+243 970 791 041</h3>
+        <!-- Location -->
+        <h2 class="detailsInfoTitle">Location</h2>
+        <h3 class="information"><i class="fa-solid fa-location-dot"></i> Lukanga,Nord-Kivu, RDC</h3>
+      </div>
+
+      <form class="formulaire">
+        <h2>Nous ecrire un message</h2>
+        <label for="UserName">Nom</label><br />
+        <input type="text" placeholder="Nom" name="UserName" id="UserName" required/><br />
+        <h4 id="verifyName"></h4>
+
+        <label for="UserEmail">Email</label> <br />
+        <input type="email" placeholder="Email" name="UserEmail" id="UserEmail" required/><br />
+        <h4 id="verifyEmail"></h4>
+
+        <label for="Subject">Sujet</label><br />
+        <input type="text" placeholder="Sujet" name="Subject" id="Subject" required/><br />
+        <h4 id="verifySubject"></h4><br>
+        
+        <label for="UserMessage">Votre Message</label><br />
+        <textarea placeholder="Votre message" name="UserMessage" id="UserMessage" required></textarea><br />
+        <h4 id="verifyMessage"></h4><br />
+        <button type="submit" id="envoyer">Envoyer</button>
+      </form>
+    </section>
+    <script src="/scripts/scriptCommun.js"></script>
+    <script src="/scripts/contact.js"></script>
+  </body>
+</html>

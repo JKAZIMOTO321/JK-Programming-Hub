@@ -1,0 +1,149 @@
+body{
+    margin-left: 0;
+    margin-right: 0;
+    background: #000000;
+}
+
+/* section bienvenue */
+#jKspan {
+  color: #007bff;
+}
+#detailPara {
+  font-size: 25px;
+  text-align: justify;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#container{
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+#welcomSection{
+    /* position: relative; */
+    max-width: 50%;
+    left: 20px;
+}
+ /* video */
+#hero-video{
+    right: 3%;
+    object-fit: cover;
+    height: 300px;
+    min-width: 45%;
+}
+
+#buttonContainer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }
+
+.aboutButton{
+    padding:15px 30px;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    border-radius: 12px;
+    position: relative;
+    z-index: 0;
+}
+
+.aboutButton::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+.aboutButton::before{
+    content: "";
+    background: linear-gradient(
+        45deg, 
+        #ff0606, #ff7300,#fffb00, #48ff00,
+        #00ffd5, #00dbff,#ff00c8, #ff0606);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+}
+@keyframes glowing{
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+.aboutButton:hover::before{
+    opacity: 1;
+}
+.aboutButton:active::after{
+    background-color: transparent;
+}
+
+
+
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  #container {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top:50px;
+  }
+  #welcomSection {
+    max-width: 100%;
+    left: 0;
+  }
+  #welcomSection h2{
+    text-align: center;
+  }
+  #welcomSection p{
+    text-align: justify;
+  }
+  #hero-video {
+    width: 100%;
+    min-width: unset;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  #hero-video {
+    height: 60vh;
+    scale: 1.1;
+  }
+  #welcomSection h2 {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  #welcomSection p {
+    font-size: 18px;
+  }
+}

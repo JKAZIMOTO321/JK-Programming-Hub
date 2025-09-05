@@ -1,0 +1,120 @@
+/* general */
+*{
+    transition: 0.2s ease-in;
+}
+body{
+    background-color: #2e2d2d;
+    height: 100vh;
+    width: 100%;
+    color: #bebebe;
+}
+
+.video-background{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    z-index: -4;
+    padding: 0;
+    margin: 0;
+}
+/* entete */
+header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+header nav{
+    position: absolute;
+    right: 20px;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 20px;
+}
+.linksHead{
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.linksHead:hover{
+    color: #569dea;
+    font-size: 23px;
+}
+
+
+.menu-icon{
+    position: absolute;
+    font-size: 30px;
+    left: 0;
+    visibility: hidden;
+}
+/* corps */
+
+/* Responsivite */
+@media screen and (max-width:900px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header h1{
+        position: absolute;
+        right: 50px;
+    }
+    header nav {
+        /* position: fixed; */
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #5f5f5fef;
+        transition: left 0.3s;
+        z-index: 1000;
+        display: flex;
+        align-items: flex-start;
+        padding-top: 60px;
+    }
+    header nav ul {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        font-size: 22px;
+        margin: 0;
+        padding: 0 0 0 30px;
+    }
+    .menu-icon {
+        visibility: visible;
+        z-index: 1100;
+        cursor: pointer;
+        top: 10px;
+        left: 10px;
+        /* position: fixed; */
+        background: #222;
+        color: #fff;
+        border-radius: 5px;
+        padding: 8px 12px;
+    }
+    /* Affiche le menu quand la classe 'active' est présente */
+    nav.active {
+        left: 0;
+    }
+}
+
+@media (max-width:400px){
+    header h1{
+        font-size: 15px;
+        margin-top: 30px;
+    }
+}
+
+
+/* @media screen and (max-width:){
+    
+} */

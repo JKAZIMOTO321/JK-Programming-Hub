@@ -1,0 +1,70 @@
+
+.aLaUne {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 0;
+}
+
+.contentAlaUne {
+    border-radius: 20px;
+    width: 300px;
+    height: fit-content;
+    margin-bottom: 0; /* Supprime le margin-bottom pour utiliser le gap */
+    border: 2px solid white;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    background: rgba(20, 20, 20, 0.287);
+    backdrop-filter: blur(2px);
+    transition: transform 0.2s;
+}
+.contentAlaUne:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.imageLang {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-top: 18px;
+}
+
+.details {
+    border-radius: 20px;
+    height: inherit;
+    background-color: rgba(26, 26, 27, 0.019);
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contentAlaUne center button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgba(26, 25, 25, 0.848);
+    color: rgb(221, 218, 218);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.contentAlaUne center button:hover {
+    background-color: #0044ff;
+    color: #fff;
+}
+
+/* Pour rendre la galerie responsive */
+@media (max-width: 900px) {
+    .aLaUne {
+        gap: 18px;
+    }
+    .contentAlaUne {
+        width: 90vw;
+        max-width: 350px;
+    }
+}

@@ -1,0 +1,101 @@
+/* main */
+#main{
+    width: 98%;
+}
+/* Information about Us */
+.infoUs{
+    /* background: linear-gradient(to right, #21212132, #27292998); */
+    background: linear-gradient(to left, #21212132, #4a4a4a98);
+    padding: 20px;
+    width: 94%;
+}
+
+.detailsInfoTitle{
+    color: #007BFF;
+}
+
+/* Formulaire de contact */
+.formulaire{
+    background: linear-gradient(to right, #21212132, #4a4a4a98);
+    padding-top: 10px;
+    box-shadow: 0 0 10px rgba(13, 103, 193, 0.349);
+    margin-top: 30px;
+    width: 96%;
+    padding-bottom: 20px;
+}
+.formulaire h2{
+    text-align: center;
+}
+h4{
+    margin-top: 3px;
+    margin-bottom: 4px;
+    margin-left: 30px;
+    opacity: 0;
+    transition: ease-in 0.4s;
+}
+.formulaire label{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.inputBox{
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+input{
+    width: 85%;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(1px);
+    outline: none;
+    color: #2689f4;
+    margin-left: 2%;
+}
+
+#UserMessage{
+    outline: none;
+    min-width: 85%;
+    max-width: 92%;
+    min-height: 100px;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    padding: 10px;
+    color: #2689f4;
+    margin-left: 2%;
+}
+
+input::placeholder{
+    color: #87b4e4;
+}
+
+.formulaire button{
+    width: 90%;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgba(26, 25, 25, 0.848);
+    color: rgb(221, 218, 218);
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.formulaire button:hover{
+    background-color: #0044ff;
+    color: #fff;
+}
+/* Font awesome icons color */
+
+.fa-location-dot,.fa-phone-volume,.fa-envelope{
+    color: #2689f4;
+    margin-right: 10px;
+}

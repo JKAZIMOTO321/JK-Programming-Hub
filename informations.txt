@@ -1,0 +1,27 @@
+MUMBERE KAZIMOTO JOSUE
+L1 SCIENCES INFORMATIQUES
+
+Site : JK Programming Hub
+
+Pages:
+    index.html : Page d'acceuil
+
+    about.html : Page A propos, dans cette page je presente pourquoi j'ai crée ce site, 
+                 dans quel objectif, pour aider qui.
+
+    galerie.html : c'est la galerie, dans  laquelle j'ai présenté  des outils qui qident pour la programmation,
+                    l'analyse des données, la sauvegarde des données et plein d'autres trucs.
+    
+    contact.html : c'est la page dans laquelle j'ai mis un formulaire de contact pour que l'utilisateur puisse pouvoir nous contacter,
+                   et aussi notre localisations et nos coordonées
+    
+    cours.html : dans cette page il y a les cours que nous recommandons à nos utiisateurs pour pouvoir exceler dans leurs carrières de dev
+
+Contenu multmedia utilisé :
+    - une video en background sur le site
+    - des images
+    - un fichier audio qui se lance lorsque l'utilisateur remplit ke formulaire de contact
+    - une video de presentation de la formation Git&GitHub(une formation d'OpenClassroom) pour debutant
+
+
+Moi MUMBERE KAZIMOTO JOSUE, Je déclare sur mon honneur que ce travail est personnel
